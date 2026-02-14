@@ -47,13 +47,12 @@ bash deploy-openclaw-wecom-robot.sh
 
 部署前请准备以下信息：
 
-### 1. AI API 凭据（必需）
-- [ ] **Anthropic API Key** (推荐)
+### 1. AI API 凭据
+- [ ] **Anthropic API Key** (推荐) - https://console.anthropic.com/
   - 或 OpenAI API Key
   - 或 AWS Bedrock 配置
-- 获取地址: https://console.anthropic.com/
 
-### 2. 企业微信配置（必需）
+### 2. 企业微信配置
 - [ ] Corp ID
 - [ ] Corp Secret
 - [ ] Agent ID
@@ -65,12 +64,12 @@ bash deploy-openclaw-wecom-robot.sh
 2. 进入 "应用管理" → "自建应用"
 3. 创建应用并记录上述信息
 
-### 3. 机器人 API 凭据（必需）
-- [ ] Robot API Base URL
+### 3. 机器人 API 凭据
+- [ ] Robot API Base URL（如: https://api.rodimus.cloud/api/v1）
 - [ ] Robot Username
 - [ ] Robot Password Hash
 
-### 4. 服务器配置（必需）
+### 4. 服务器配置
 - [ ] 服务器公网 IP 地址
 - [ ] 开放端口 8080（用于企业微信回调）
 
