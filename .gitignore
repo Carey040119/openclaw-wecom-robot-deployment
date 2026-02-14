@@ -1,0 +1,29 @@
+# Environment files (never commit credentials!)
+.env
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Snapshots
+robot-snapshots/
+*.jpg
+*.png
+
+# Backup
+*.tar.gz
+*.zip
+*.bak
