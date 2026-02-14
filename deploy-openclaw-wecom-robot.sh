@@ -139,9 +139,6 @@ configure_openclaw() {
         export OPENAI_API_KEY
     fi
     
-    # WhatsApp
-    prompt_input "SETUP_WHATSAPP" "是否配置 WhatsApp? (y/n)" "y"
-    
     # Create basic config
     log_info "生成配置文件..."
     
@@ -154,15 +151,6 @@ configure_openclaw() {
   "channels": {}
 }
 EOF
-    
-    if [ "$SETUP_WHATSAPP" == "y" ]; then
-        log_info "启动 OpenClaw 以配置 WhatsApp..."
-        log_info "请扫描二维码以链接 WhatsApp"
-        openclaw gateway start --foreground &
-        OPENCLAW_PID=$!
-        sleep 5
-        kill $OPENCLAW_PID 2>/dev/null || true
-    fi
     
     log_info "✓ OpenClaw 配置完成"
 }

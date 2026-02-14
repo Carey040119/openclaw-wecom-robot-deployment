@@ -1,16 +1,16 @@
-# OpenClaw + WeCom + Robot Control - 一键部署脚本
+# 企业微信机器狗控制系统 - 一键部署
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-完整的部署脚本，用于在全新服务器上一键部署 OpenClaw AI 助手 + 企业微信集成 + Unitree Go2 机器狗控制系统。
+通过企业微信实时控制 Unitree Go2 机器狗的完整部署方案。基于 OpenClaw 框架 + 企业微信集成。
 
 ## ✨ 特性
 
+- 🤖 **完整机器人控制** - 状态查询、拍照、动作、移动、转向
+- 💬 **企业微信实时控制** - 发送消息即可控制，延迟 <3 秒
 - 🚀 **一键部署** - 单个脚本完成所有安装和配置
 - 📦 **完全自包含** - 无需额外下载其他文件
-- 🤖 **机器人控制** - 支持 Unitree Go2 机器狗的完整控制
-- 💬 **企业微信集成** - 通过企业微信直接控制机器人
-- 🔒 **安全可靠** - 自动配置 systemd 服务
+- 🔒 **自动服务化** - systemd 守护进程，开机自启
 - 📝 **详细文档** - 包含故障排查和进阶配置
 
 ## 🎯 快速开始
